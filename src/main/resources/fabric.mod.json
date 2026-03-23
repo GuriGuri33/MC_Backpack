@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "test",
+  "version": "${version}",
+  "name": "test",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/test/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "fabric-datagen": [
+      "Irukai.example.test.client.TestDataGenerator"
+    ],
+    "client": [
+      "Irukai.example.test.client.TestClient"
+    ],
+    "main": [
+      "Irukai.example.test.Test"
+    ]
+  },
+  "mixins": [
+    "test.mixins.json",
+    {
+      "config": "test.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}

@@ -1,8 +1,8 @@
 📦 src/main/java (Common: 서버/클라이언트 공통 로직)
 ┃
-┗━━ 📂 com.example.Irukai.backpack
+┗━━ 📂 Irukai.example.test
     ┃
-    ┣━━ 📄 Backpack.java (모드 메인 클래스)
+    ┣━━ 📄 Test.java (모드 메인 클래스)
     ┃   ┗━━ onInitialize(): 게임 시작 시 실행되는 입구. 아이템과 화면을 등록함.
     ┃
     ┣━━ 📂 item
@@ -28,12 +28,12 @@
 
 📦 src/client/java (Client Only: 내 컴퓨터 화면에만 보이는 로직)
 ┃
-┗━━ 📂 com.example.Irukai.backpack
+┗━━ 📂 Irukai.example.test
     ┃
-    ┣━━ 📄 BackpackClient.java (클라이언트 시작 지점)
+    ┣━━ 📄 TestClient.java (클라이언트 시작 지점)
     ┃   ┗━━ onInitializeClient(): 서버의 '로직'과 클라이언트의 '화면(그림)'을 연결함.
     ┃
-    ┣━━ 📄 BackpackDataGenerator.java (데이터 생성기)
+    ┣━━ 📄 TestDataGenerator.java (데이터 생성기)
     ┃   ┗━━ (필요 시): 아이템의 모델이나 조합법 JSON 파일을 코드로 자동 생성해주는 도구.
     ┃
     ┗━━ 📂 screen
